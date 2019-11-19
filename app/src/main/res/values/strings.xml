@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">The Best Team Of Creating Robots</string>
+    <string name="connect_robot">Connect Robot</string>
+    <string name="control_panel">Control Panel</string>
+    <string name="information">Information</string>
+</resources>
