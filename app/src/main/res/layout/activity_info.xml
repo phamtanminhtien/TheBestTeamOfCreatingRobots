@@ -4,25 +4,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Info">
+    tools:context=".Info"
+    android:background="@drawable/bg_main">
 
     <ViewFlipper
-        android:id="@+id/simpleViewFlipper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/simpleViewFlipper1"
+        android:layout_width="238dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/ava1"
+            android:layout_width="248dp"
             android:layout_height="wrap_content"
-            android:text="First TextView" />
+            app:srcCompat="@drawable/ava1" />
 
-        <TextView
+        <ImageView
+            android:id="@+id/ava2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Second TextView" />
+            app:srcCompat="@drawable/ava2" />
+
+        <ImageView
+            android:id="@+id/ava3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ava3" />
+
+        <ImageView
+            android:id="@+id/ava4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ava4" />
+
+        <ImageView
+            android:id="@+id/ava5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ava5" />
 
     </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/simpleViewFlipper2"
+        android:layout_width="132dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/simpleViewFlipper1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/bg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phạm Tấn Minh Tiến" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSSV: 19119014" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/bg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phạm Tấn Minh Tiến" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSSV: 19119014" />
+        </LinearLayout>
+        <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/bg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phạm Tấn Minh Tiến" />
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV: 19119014" />
+    </LinearLayout>
+        <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/bg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phạm Tấn Minh Tiến" />
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV: 19119014" />
+    </LinearLayout>
+        <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/bg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phạm Tấn Minh Tiến" />
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV: 19119014" />
+    </LinearLayout>
+
+
+    </ViewFlipper>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleViewFlipper1">
+
+        <TextView
+            android:background="@drawable/bg_control"
+            android:padding="20dp"
+            android:id="@+id/infomation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="The Best Team Creating Robots"/>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
