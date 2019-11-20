@@ -71,6 +71,16 @@
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="@string/enable"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -79,16 +89,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-6265731036198673/4761843063">
-        </com.google.android.gms.ads.AdView>
+        <com.startapp.android.publish.ads.banner.Mrec
+            android:id="@+id/startAppMrec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
 
         <LinearLayout
             android:layout_marginBottom="10dp"

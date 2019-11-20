@@ -3,4 +3,6 @@
     <string name="connect_robot">Connect Robot</string>
     <string name="control_panel">Control Panel</string>
     <string name="information">Information</string>
+    <string name="disable_ads">Disable Ads</string>
+    <string name="enable">Enable</string>
 </resources>

@@ -28,12 +28,10 @@ public class Connect extends AppCompatActivity {
     ListView listView;
     final ArrayList<DeviceTac> list = new ArrayList<>();
     BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-    FrameLayout load;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connect);
-        load = findViewById(R.id.load);
         Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
 
         if (pairedDevices.size() > 0) {
